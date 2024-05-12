@@ -66,6 +66,12 @@ extension Router {
             request.setValue(value, forHTTPHeaderField: key)
         }
         
+        let apiHeader = KeychainHelper.shared.read(service: Constants.newsApiService, account: Constants.newsApiAccount, type: String.self) as? String
+        
+        if let apiHeader {
+            request.setValue(apiHeader, forHTTPHeaderField: "Authorization")
+        }
+        
         if let parameters {
             request.httpBody = try? JSONSerialization.data(withJSONObject: parameters)
         }
