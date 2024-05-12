@@ -17,6 +17,8 @@ O projeto também contava com os seguintes requisitos opcionais (desejáveis):
   - Ser criativo com a construção do Layout
   - Escrever testes com XCTest
 
+O projeto conta com um Design feito seguindo as normas da [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines) da Apple, utilizando da melhor forma os componentes nativos do sistema.
+
 ## Tecnologias Utilizadas:
 
 Para este projeto foram utilizados <b>Swift</b>, <b>UIKit</b> e <i>XCTest</i> para os testes. Através do <i>UIKit</i>, o projeto utilizou de <i>View Code</i> para o <i>auto layout</i>.
