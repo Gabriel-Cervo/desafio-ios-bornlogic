@@ -1,6 +1,6 @@
 # Desafio iOS - BornLogic
 
-## Visão Geral:
+## Visão Geral
 
 O presente aplicativo é o resultado de um desafio técnico para a BornLogic, e contava com os seguintes requisitos:
  - O app deve consumir a seguinte API: https://newsapi.org
@@ -17,9 +17,13 @@ O projeto também contava com os seguintes requisitos opcionais (desejáveis):
   - Ser criativo com a construção do Layout
   - Escrever testes com XCTest
 
+## Design
+
 O projeto conta com um Design feito seguindo as normas da [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines) da Apple, utilizando da melhor forma os componentes nativos do sistema.
 
-## Tecnologias Utilizadas:
+O app se adapta também as configurações dinâmicas do sistema, como <i>dark mode</i> e <i>dynamic font</i>, provendo a melhor experiência possível para todos os usuários, incluindo aqueles com opções de acessibilidade.
+
+## Tecnologias Utilizadas
 
 Para este projeto foram utilizados <b>Swift</b>, <b>UIKit</b> e <i>XCTest</i> para os testes. Através do <i>UIKit</i>, o projeto utilizou de <i>View Code</i> para o <i>auto layout</i>.
 
@@ -28,11 +32,11 @@ O app também utilizou dos seguintes <i>Design Patterns</i>:
   - Singleton
   - Strategy
 
-## Arquitetura:
+## Arquitetura
 
 O projeto conta com a arquitetura MVVM (Model-View-ViewModel) e segue os conceitos da <i>Clean Architecture</i>, realizando a separação em camadas. A arquitetura implementada permite de modo fácil retirar, atualizar ou inserir novas funcionalidades com bastante facilidade e manutenabilidade, permitindo que o app escale caso necessário.
 
-## Testes:
+## Testes
 
 O projeto conta com testagem unitária utilizando <i>XCTest</i>. Os testes foram organizados a nível de funcionalidade, contando com mocks para cada testes não depender de outras camadas.
 
