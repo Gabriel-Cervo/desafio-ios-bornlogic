@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A522ABB22BF12C800047E80B /* ArticleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A522ABB12BF12C800047E80B /* ArticleDetailsViewController.swift */; };
 		A54D46222BF006AC00722F48 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D46212BF006AC00722F48 /* UIView+Extension.swift */; };
 		A54D46242BF006E400722F48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D46232BF006E400722F48 /* Constants.swift */; };
 		A54D46262BF0073600722F48 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D46252BF0073600722F48 /* AppColors.swift */; };
@@ -51,8 +52,6 @@
 		A581B9452BEF831D005B2B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A581B9442BEF831D005B2B4D /* Assets.xcassets */; };
 		A581B9482BEF831D005B2B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A581B9462BEF831D005B2B4D /* LaunchScreen.storyboard */; };
 		A581B9532BEF831D005B2B4D /* bornlogic_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A581B9522BEF831D005B2B4D /* bornlogic_testTests.swift */; };
-		A581B95D2BEF831D005B2B4D /* bornlogic_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A581B95C2BEF831D005B2B4D /* bornlogic_testUITests.swift */; };
-		A581B95F2BEF831D005B2B4D /* bornlogic_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A581B95E2BEF831D005B2B4D /* bornlogic_testUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A522ABB12BF12C800047E80B /* ArticleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsViewController.swift; sourceTree = "<group>"; };
 		A54D46212BF006AC00722F48 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A54D46232BF006E400722F48 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A54D46252BF0073600722F48 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
@@ -120,8 +120,6 @@
 		A581B94E2BEF831D005B2B4D /* bornlogic-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bornlogic-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A581B9522BEF831D005B2B4D /* bornlogic_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bornlogic_testTests.swift; sourceTree = "<group>"; };
 		A581B9582BEF831D005B2B4D /* bornlogic-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bornlogic-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A581B95C2BEF831D005B2B4D /* bornlogic_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bornlogic_testUITests.swift; sourceTree = "<group>"; };
-		A581B95E2BEF831D005B2B4D /* bornlogic_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bornlogic_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -366,6 +364,7 @@
 			isa = PBXGroup;
 			children = (
 				A54D467D2BF0F85A00722F48 /* NewsViewController.swift */,
+				A522ABB12BF12C800047E80B /* ArticleDetailsViewController.swift */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -391,7 +390,6 @@
 			children = (
 				A581B93A2BEF831B005B2B4D /* bornlogic-test */,
 				A581B9512BEF831D005B2B4D /* bornlogic-testTests */,
-				A581B95B2BEF831D005B2B4D /* bornlogic-testUITests */,
 				A581B9392BEF831B005B2B4D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -434,15 +432,6 @@
 				A581B9522BEF831D005B2B4D /* bornlogic_testTests.swift */,
 			);
 			path = "bornlogic-testTests";
-			sourceTree = "<group>";
-		};
-		A581B95B2BEF831D005B2B4D /* bornlogic-testUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A581B95C2BEF831D005B2B4D /* bornlogic_testUITests.swift */,
-				A581B95E2BEF831D005B2B4D /* bornlogic_testUITestsLaunchTests.swift */,
-			);
-			path = "bornlogic-testUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -612,6 +601,7 @@
 				A54D46222BF006AC00722F48 /* UIView+Extension.swift in Sources */,
 				A581B93E2BEF831B005B2B4D /* SceneDelegate.swift in Sources */,
 				A54D465F2BF09C8800722F48 /* LoadNewsUseCase.swift in Sources */,
+				A522ABB22BF12C800047E80B /* ArticleDetailsViewController.swift in Sources */,
 				A54D462E2BF0085500722F48 /* DefaultCodableStrategy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -636,8 +626,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A581B95F2BEF831D005B2B4D /* bornlogic_testUITestsLaunchTests.swift in Sources */,
-				A581B95D2BEF831D005B2B4D /* bornlogic_testUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -125,6 +125,16 @@ extension NewsViewController: UITableViewDataSource {
 extension NewsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let news = viewModel.news else { return }
+        
         coordinator.openNews(article: news.articles[indexPath.row])
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard indexPath.row + 1 == viewModel.news?.articles.count else {
+            return
+        }
+        
+        currentPage += 1
+        viewModel.fetchData(forPage: currentPage)
     }
 }

@@ -34,6 +34,7 @@ struct NewsArticle: Codable {
     @DefaultString var author: String
     @DefaultString var title: String
     @DefaultString var description: String
+    @DefaultString var url: String
     @DefaultString var urlToImage: String
     @DefaultString var publishedAt: String
     @DefaultString var content: String

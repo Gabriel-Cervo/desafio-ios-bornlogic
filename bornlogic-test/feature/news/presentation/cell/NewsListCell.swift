@@ -38,7 +38,7 @@ class NewsListCell: UITableViewCell {
     private let subtitleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .preferredFont(forTextStyle: .body)
+        label.font = .preferredFont(forTextStyle: .subheadline)
         label.numberOfLines = 3
         label.textColor = AppColors.subtitleTextColor
         return label

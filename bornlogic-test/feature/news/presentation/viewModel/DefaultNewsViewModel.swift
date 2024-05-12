@@ -22,7 +22,11 @@ final class DefaultNewsViewModel: NewsViewModelProtocol {
         fetchDataUseCase.run(page: page) { [weak self] result in
             switch result {
             case .success(let data):
-                self?.news = data
+                if(page == 1) {
+                    self?.news = data
+                } else {
+                    self?.news?.articles.append(contentsOf: data.articles)
+                }
                 self?.onFetchSuccess?(data)
             case .failure(let error):
                 self?.onFetchError?(error)

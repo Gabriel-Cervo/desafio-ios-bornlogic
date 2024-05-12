@@ -64,11 +64,11 @@ class NewsCoordinator: NewsCoordinatorProtocol {
     
     func openNewsList() {
         let viewController = container.resolve(type: PresentableNewsView.self)!.toPresent()
-        viewController.modalPresentationStyle = .fullScreen
         navigationController?.pushViewController(viewController, animated: false)
     }
     
     func openNews(article: NewsArticle) {
-        
+        let viewController = ArticleDetailsViewController(article: article)
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
