@@ -15,9 +15,7 @@ struct Constants {
     
     static let newsApiService = "newsAPI"
     static let newsApiAccount = "teste-news-api"
+    static let defaultRequestHeaders: RequestHeader = ["Content-Type": "application/json"]
     
-    static let defaultRequestHeaders: RequestHeader = [
-        "Content-Type": "application/json"
-    ]
-
+    static let defaultPadding: CGFloat = 16.0
 }

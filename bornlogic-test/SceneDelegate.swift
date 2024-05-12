@@ -9,7 +9,7 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
-    var appNavigationService: NavigationCoordinator?
+    var appCoordinator: NavigationCoordinator?
     var window: UIWindow?
 
 
@@ -49,9 +49,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     /// Saves to keychain pre-written data.
-    private func saveKeychainData() {
+    private func saveKeychainData() {        
         KeychainHelper.shared.save(
-            "be70cfced3ab49ccb08a80b0025f3bea".data(using: .utf8)!,
+            "be70cfced3ab49ccb08a80b0025f3bea",
             service: Constants.newsApiService,
             account: Constants.newsApiAccount
         )
@@ -61,25 +61,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let navigationController = window?.rootViewController as? UINavigationController else { return }
         
         let container = DIContainer()
-        registerNavigationDependencies(to: container, navigationController: navigationController)
-        registerRepositoryDependencies(to: container, navigationController: navigationController)
-        registerUseCasesDependencies(to: container, navigationController: navigationController)
-        registerViewModelsDependencies(to: container, navigationController: navigationController)
         
-        appNavigationService = container.resolve(type: NavigationCoordinator.self)!
+        container.register(type: NavigationCoordinator.self) { container in
+            AppCoordinator(navigationController: navigationController, container: container)
+        }
+        
+        container.register(type: NewsCoordinatorProtocol.self) { container in
+            NewsCoordinator(container: container, navigationController: navigationController)
+        }
+        
+        container.register(type: NetworkServiceProtocol.self) { container in
+            DefaultNetworkService()
+        }
+        
+        appCoordinator = container.resolve(type: NavigationCoordinator.self)!
     }
-    
-    private func registerNavigationDependencies(to container: DIContainerService, navigationController: UINavigationController) {
-    }
-    
-    private func registerRepositoryDependencies(to container: DIContainerService, navigationController: UINavigationController) {
-    }
-    
-    private func registerUseCasesDependencies(to container: DIContainerService, navigationController: UINavigationController) {
-    }
-    
-    private func registerViewModelsDependencies(to container: DIContainerService, navigationController: UINavigationController) {
-    }
-
 }
 

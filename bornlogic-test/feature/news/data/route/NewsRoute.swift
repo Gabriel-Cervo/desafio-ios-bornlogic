@@ -15,7 +15,7 @@ enum NewsRoute: Router {
     }
     
     var endpoint: String {
-        "everything"
+        return "top-headlines"
     }
      
     var method: RequestMethod {
@@ -30,9 +30,9 @@ enum NewsRoute: Router {
         switch self {
         case .fetchNews(let page):
             return [
+                "country": "us",
                 "page": "\(page)",
                 "pageSize": "10",
-                "sortBy": "popularity"
             ]
         }
     }

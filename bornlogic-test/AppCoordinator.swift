@@ -1,5 +1,5 @@
 //
-//  AppNavigation.swift
+//  AppCoordinator.swift
 //  bornlogic-test
 //
 //  Created by João Gabriel Dourado Cervo on 11/05/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AppNavigation: NavigationCoordinator, ExternalNavigationService {
+class AppCoordinator: NavigationCoordinator, ExternalNavigationService {
     var navigationController: UINavigationController
     var container: DIContainerService
                
@@ -17,7 +17,8 @@ class AppNavigation: NavigationCoordinator, ExternalNavigationService {
     }
     
     func openNewsViewController() {
-        //TODO: - news
+        let newsCoordinator = container.resolve(type: NewsCoordinatorProtocol.self)!
+        newsCoordinator.openNewsList()
     }
     
     func popToRootViewController(animated: Bool) {
