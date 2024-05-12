@@ -37,6 +37,10 @@
 		A54D466A2BF09F8800722F48 /* MockNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D46692BF09F8800722F48 /* MockNews.swift */; };
 		A54D466C2BF0A05600722F48 /* NewsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D466B2BF0A05600722F48 /* NewsRepositoryTests.swift */; };
 		A54D466E2BF0A2CC00722F48 /* LoadNewsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D466D2BF0A2CC00722F48 /* LoadNewsUseCaseTests.swift */; };
+		A54D46712BF0F40600722F48 /* NewsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D46702BF0F40600722F48 /* NewsViewModelProtocol.swift */; };
+		A54D46732BF0F43100722F48 /* DefaultNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D46722BF0F43100722F48 /* DefaultNewsViewModel.swift */; };
+		A54D46752BF0F55400722F48 /* NewsViewModleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D46742BF0F55400722F48 /* NewsViewModleTests.swift */; };
+		A54D46772BF0F59B00722F48 /* MockUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D46762BF0F59B00722F48 /* MockUseCase.swift */; };
 		A581B93C2BEF831B005B2B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A581B93B2BEF831B005B2B4D /* AppDelegate.swift */; };
 		A581B93E2BEF831B005B2B4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A581B93D2BEF831B005B2B4D /* SceneDelegate.swift */; };
 		A581B9402BEF831B005B2B4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A581B93F2BEF831B005B2B4D /* ViewController.swift */; };
@@ -95,6 +99,10 @@
 		A54D46692BF09F8800722F48 /* MockNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNews.swift; sourceTree = "<group>"; };
 		A54D466B2BF0A05600722F48 /* NewsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepositoryTests.swift; sourceTree = "<group>"; };
 		A54D466D2BF0A2CC00722F48 /* LoadNewsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadNewsUseCaseTests.swift; sourceTree = "<group>"; };
+		A54D46702BF0F40600722F48 /* NewsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModelProtocol.swift; sourceTree = "<group>"; };
+		A54D46722BF0F43100722F48 /* DefaultNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNewsViewModel.swift; sourceTree = "<group>"; };
+		A54D46742BF0F55400722F48 /* NewsViewModleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModleTests.swift; sourceTree = "<group>"; };
+		A54D46762BF0F59B00722F48 /* MockUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUseCase.swift; sourceTree = "<group>"; };
 		A581B9382BEF831B005B2B4D /* bornlogic-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bornlogic-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A581B93B2BEF831B005B2B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A581B93D2BEF831B005B2B4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +184,7 @@
 		A54D461D2BEFFDED00722F48 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A54D466F2BF0F3F700722F48 /* viewModel */,
 			);
 			path = presentation;
 			sourceTree = "<group>";
@@ -313,6 +322,7 @@
 				A54D46682BF09F7F00722F48 /* Mocks */,
 				A54D466B2BF0A05600722F48 /* NewsRepositoryTests.swift */,
 				A54D466D2BF0A2CC00722F48 /* LoadNewsUseCaseTests.swift */,
+				A54D46742BF0F55400722F48 /* NewsViewModleTests.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -329,8 +339,18 @@
 			isa = PBXGroup;
 			children = (
 				A54D46692BF09F8800722F48 /* MockNews.swift */,
+				A54D46762BF0F59B00722F48 /* MockUseCase.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A54D466F2BF0F3F700722F48 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A54D46702BF0F40600722F48 /* NewsViewModelProtocol.swift */,
+				A54D46722BF0F43100722F48 /* DefaultNewsViewModel.swift */,
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 		A581B92F2BEF831B005B2B4D = {
@@ -532,6 +552,7 @@
 				A54D462A2BF007CE00722F48 /* String+Extension.swift in Sources */,
 				A54D46322BF009C700722F48 /* AppImages.swift in Sources */,
 				A54D46402BF08DE400722F48 /* NetworkCommonTypes.swift in Sources */,
+				A54D46732BF0F43100722F48 /* DefaultNewsViewModel.swift in Sources */,
 				A54D46472BF08FD700722F48 /* KeychainHelper.swift in Sources */,
 				A54D46592BF09BA000722F48 /* NewsList.swift in Sources */,
 				A54D46632BF09CEC00722F48 /* NewsRoute.swift in Sources */,
@@ -549,6 +570,7 @@
 				A54D462C2BF0080900722F48 /* DateFormatter+Extension.swift in Sources */,
 				A54D465C2BF09C4700722F48 /* NewsRepositoryProtocol.swift in Sources */,
 				A54D46262BF0073600722F48 /* AppColors.swift in Sources */,
+				A54D46712BF0F40600722F48 /* NewsViewModelProtocol.swift in Sources */,
 				A54D46422BF08E0000722F48 /* NetworkServiceProtocol.swift in Sources */,
 				A54D46442BF08E3400722F48 /* DefaultNetworkService.swift in Sources */,
 				A54D46222BF006AC00722F48 /* UIView+Extension.swift in Sources */,
@@ -565,10 +587,12 @@
 				A54D464D2BF0961000722F48 /* NetworkMockRoute.swift in Sources */,
 				A581B9532BEF831D005B2B4D /* bornlogic_testTests.swift in Sources */,
 				A54D466C2BF0A05600722F48 /* NewsRepositoryTests.swift in Sources */,
+				A54D46772BF0F59B00722F48 /* MockUseCase.swift in Sources */,
 				A54D466A2BF09F8800722F48 /* MockNews.swift in Sources */,
 				A54D46512BF0969A00722F48 /* NetworkTests.swift in Sources */,
 				A54D464A2BF095D600722F48 /* MockURLProtocol.swift in Sources */,
 				A54D466E2BF0A2CC00722F48 /* LoadNewsUseCaseTests.swift in Sources */,
+				A54D46752BF0F55400722F48 /* NewsViewModleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
