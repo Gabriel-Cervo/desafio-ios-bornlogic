@@ -12,4 +12,12 @@ struct Constants {
      
     /// Tag used to identify shimmering block in a view
     static let shimmeringBlockTag = 987
+    
+    static let newsApiService = "newsAPI"
+    static let newsApiAccount = "teste-news-api"
+    
+    static let defaultRequestHeaders: RequestHeader = [
+        "Content-Type": "application/json"
+    ]
+
 }

@@ -18,6 +18,15 @@
 		A54D46322BF009C700722F48 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D46312BF009C700722F48 /* AppImages.swift */; };
 		A54D46352BF00A1A00722F48 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D46342BF00A1A00722F48 /* NavigationCoordinator.swift */; };
 		A54D46372BF00A8300722F48 /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D46362BF00A8300722F48 /* AppNavigation.swift */; };
+		A54D463C2BF08DA900722F48 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D463B2BF08DA900722F48 /* URLRequestConvertible.swift */; };
+		A54D463E2BF08DC400722F48 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D463D2BF08DC400722F48 /* Router.swift */; };
+		A54D46402BF08DE400722F48 /* NetworkCommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D463F2BF08DE400722F48 /* NetworkCommonTypes.swift */; };
+		A54D46422BF08E0000722F48 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D46412BF08E0000722F48 /* NetworkServiceProtocol.swift */; };
+		A54D46442BF08E3400722F48 /* DefaultNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D46432BF08E3400722F48 /* DefaultNetworkService.swift */; };
+		A54D46472BF08FD700722F48 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D46462BF08FD700722F48 /* KeychainHelper.swift */; };
+		A54D464A2BF095D600722F48 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D46492BF095D600722F48 /* MockURLProtocol.swift */; };
+		A54D464D2BF0961000722F48 /* NetworkMockRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D464C2BF0961000722F48 /* NetworkMockRoute.swift */; };
+		A54D46512BF0969A00722F48 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D46502BF0969A00722F48 /* NetworkTests.swift */; };
 		A581B93C2BEF831B005B2B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A581B93B2BEF831B005B2B4D /* AppDelegate.swift */; };
 		A581B93E2BEF831B005B2B4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A581B93D2BEF831B005B2B4D /* SceneDelegate.swift */; };
 		A581B9402BEF831B005B2B4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A581B93F2BEF831B005B2B4D /* ViewController.swift */; };
@@ -58,6 +67,15 @@
 		A54D46312BF009C700722F48 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
 		A54D46342BF00A1A00722F48 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 		A54D46362BF00A8300722F48 /* AppNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigation.swift; sourceTree = "<group>"; };
+		A54D463B2BF08DA900722F48 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
+		A54D463D2BF08DC400722F48 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A54D463F2BF08DE400722F48 /* NetworkCommonTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCommonTypes.swift; sourceTree = "<group>"; };
+		A54D46412BF08E0000722F48 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		A54D46432BF08E3400722F48 /* DefaultNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkService.swift; sourceTree = "<group>"; };
+		A54D46462BF08FD700722F48 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		A54D46492BF095D600722F48 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		A54D464C2BF0961000722F48 /* NetworkMockRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMockRoute.swift; sourceTree = "<group>"; };
+		A54D46502BF0969A00722F48 /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
 		A581B9382BEF831B005B2B4D /* bornlogic-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bornlogic-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A581B93B2BEF831B005B2B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A581B93D2BEF831B005B2B4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +164,7 @@
 				A54D462D2BF0085500722F48 /* DefaultCodableStrategy.swift */,
 				A54D462F2BF0099B00722F48 /* DIContainer.swift */,
 				A54D46312BF009C700722F48 /* AppImages.swift */,
+				A54D46462BF08FD700722F48 /* KeychainHelper.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -167,6 +186,67 @@
 				A54D46342BF00A1A00722F48 /* NavigationCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A54D46382BF08D5800722F48 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				A54D463A2BF08D6800722F48 /* domain */,
+				A54D46392BF08D6400722F48 /* data */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		A54D46392BF08D6400722F48 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				A54D46452BF08E8100722F48 /* routes */,
+				A54D46432BF08E3400722F48 /* DefaultNetworkService.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		A54D463A2BF08D6800722F48 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				A54D463B2BF08DA900722F48 /* URLRequestConvertible.swift */,
+				A54D463D2BF08DC400722F48 /* Router.swift */,
+				A54D463F2BF08DE400722F48 /* NetworkCommonTypes.swift */,
+				A54D46412BF08E0000722F48 /* NetworkServiceProtocol.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		A54D46452BF08E8100722F48 /* routes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = routes;
+			sourceTree = "<group>";
+		};
+		A54D46482BF095CE00722F48 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A54D464B2BF0960700722F48 /* Network */,
+				A54D46492BF095D600722F48 /* MockURLProtocol.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A54D464B2BF0960700722F48 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A54D464C2BF0961000722F48 /* NetworkMockRoute.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A54D464F2BF0968E00722F48 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A54D46502BF0969A00722F48 /* NetworkTests.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		A581B92F2BEF831B005B2B4D = {
@@ -192,6 +272,7 @@
 		A581B93A2BEF831B005B2B4D /* bornlogic-test */ = {
 			isa = PBXGroup;
 			children = (
+				A54D46382BF08D5800722F48 /* network */,
 				A54D46202BEFFFB200722F48 /* extension */,
 				A54D461E2BEFFF5E00722F48 /* util */,
 				A54D46192BEFFDDE00722F48 /* feature */,
@@ -210,6 +291,8 @@
 		A581B9512BEF831D005B2B4D /* bornlogic-testTests */ = {
 			isa = PBXGroup;
 			children = (
+				A54D464F2BF0968E00722F48 /* Network */,
+				A54D46482BF095CE00722F48 /* Mocks */,
 				A581B9522BEF831D005B2B4D /* bornlogic_testTests.swift */,
 			);
 			path = "bornlogic-testTests";
@@ -357,15 +440,21 @@
 			files = (
 				A54D462A2BF007CE00722F48 /* String+Extension.swift in Sources */,
 				A54D46322BF009C700722F48 /* AppImages.swift in Sources */,
+				A54D46402BF08DE400722F48 /* NetworkCommonTypes.swift in Sources */,
+				A54D46472BF08FD700722F48 /* KeychainHelper.swift in Sources */,
 				A54D46302BF0099B00722F48 /* DIContainer.swift in Sources */,
 				A54D46372BF00A8300722F48 /* AppNavigation.swift in Sources */,
 				A54D46352BF00A1A00722F48 /* NavigationCoordinator.swift in Sources */,
 				A54D46282BF0078100722F48 /* UIColor+Extension.swift in Sources */,
 				A54D46242BF006E400722F48 /* Constants.swift in Sources */,
+				A54D463C2BF08DA900722F48 /* URLRequestConvertible.swift in Sources */,
+				A54D463E2BF08DC400722F48 /* Router.swift in Sources */,
 				A581B9402BEF831B005B2B4D /* ViewController.swift in Sources */,
 				A581B93C2BEF831B005B2B4D /* AppDelegate.swift in Sources */,
 				A54D462C2BF0080900722F48 /* DateFormatter+Extension.swift in Sources */,
 				A54D46262BF0073600722F48 /* AppColors.swift in Sources */,
+				A54D46422BF08E0000722F48 /* NetworkServiceProtocol.swift in Sources */,
+				A54D46442BF08E3400722F48 /* DefaultNetworkService.swift in Sources */,
 				A54D46222BF006AC00722F48 /* UIView+Extension.swift in Sources */,
 				A581B93E2BEF831B005B2B4D /* SceneDelegate.swift in Sources */,
 				A54D462E2BF0085500722F48 /* DefaultCodableStrategy.swift in Sources */,
@@ -376,7 +465,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A54D464D2BF0961000722F48 /* NetworkMockRoute.swift in Sources */,
 				A581B9532BEF831D005B2B4D /* bornlogic_testTests.swift in Sources */,
+				A54D46512BF0969A00722F48 /* NetworkTests.swift in Sources */,
+				A54D464A2BF095D600722F48 /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

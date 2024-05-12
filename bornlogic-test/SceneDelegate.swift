@@ -14,10 +14,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        saveKeychainData()
         registerDependenciesToInject()
+        
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
@@ -47,6 +46,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+    }
+    
+    /// Saves to keychain pre-written data.
+    private func saveKeychainData() {
+        KeychainHelper.shared.save(
+            "be70cfced3ab49ccb08a80b0025f3bea".data(using: .utf8)!,
+            service: Constants.newsApiService,
+            account: Constants.newsApiAccount
+        )
     }
 
     private func registerDependenciesToInject() {
