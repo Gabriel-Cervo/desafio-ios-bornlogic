@@ -5,7 +5,7 @@
 //  Created by João Gabriel Dourado Cervo on 11/05/24.
 //
 
-import Foundation
+import UIKit
 
 struct AppColors {
     private init() {}
