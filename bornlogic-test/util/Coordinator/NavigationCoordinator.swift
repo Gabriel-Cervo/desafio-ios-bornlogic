@@ -21,7 +21,7 @@ protocol NavigationCoordinator: ExternalNavigationService {
 
 //MARK: - Presentable View
 
-/// Represents a type that can be presented in navigation
+/// Represents a type that can be presented as the entry point for a navigation
 protocol PresentableView {
     func toPresent() -> UIViewController
 }
@@ -32,4 +32,5 @@ extension PresentableView where Self: UIViewController {
     }
 }
 
+/// A typat that is the entry point for the `News` feature's navigation
 protocol PresentableNewsView: PresentableView {}

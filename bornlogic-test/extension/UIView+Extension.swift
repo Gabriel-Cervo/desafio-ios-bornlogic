@@ -15,7 +15,7 @@ extension UIView {
     ) {
         let blockView = UIView()
         blockView.tag = Constants.shimmeringBlockTag
-        blockView.backgroundColor = AppColors.navigationBarBackground
+        blockView.backgroundColor = AppColors.blockViewBackground
         blockView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(blockView)
         
