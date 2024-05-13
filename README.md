@@ -40,11 +40,11 @@ O projeto conta com a arquitetura MVVM (Model-View-ViewModel) e segue os conceit
 
 O projeto conta com testagem unitária utilizando <i>XCTest</i>. Os testes foram organizados a nível de funcionalidade, contando com mocks para cada testes não depender de outras camadas.
 
-## Dependências:
+## Dependências
 
 O projeto consta apenas com o <b>Kingfisher</b> como dependência (instalado através do <i>Swift Package Manager</i>). Este é usado para o <i>download</i> e <i>cache</i> das imagens baixadas para as notícias.
 
-## Próximos Passos:
+## Próximos Passos
 
 Como o projeto teve um escopo mais limitado devido ao fato de ser um teste técnico, certas coisas foram deixadas de fora visto que não eram essenciais. Sendo assim, para novas versões é possível adicionar essas funcionalidades e telas, sendo elas:
 - Compartilhamento de notícia
